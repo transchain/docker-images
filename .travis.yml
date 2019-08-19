@@ -1,0 +1,5 @@
+language: minimal
+services:
+  - docker
+script:
+  - docker run -it -v /var/run/docker.sock:/var/run/docker.sock -v ${PWD}:/build insanebrain/dbp:v1.1.1 sh -c "echo ${DOCKER_PASS} | docker login -u ${DOCKER_USER} --password-stdin && dbp build commit ${TRAVIS_COMMIT} --push"

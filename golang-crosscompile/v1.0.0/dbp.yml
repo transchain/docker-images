@@ -1,0 +1,23 @@
+name: transchain/golang-crosscompile
+tag: v1.0.0
+isLatest: false
+
+packages:
+  git:
+  gcc:
+  libgl1-mesa-dev:
+  xorg-dev:
+  curl:
+  gosu:
+  libltdl-dev:
+  gcc-mingw-w64:
+  parallel:
+  patch:
+  xz-utils:
+  clang:
+  llvm:
+  file:
+  osxcross:
+  golang: 1.12.6
+  goreleaser: v0.112.1
+  go-bindata:
